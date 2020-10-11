@@ -7,4 +7,10 @@
     android:orientation="horizontal"
     tools:context=".activity_Piano_Instrumental">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Piano instrumental" />
 </LinearLayout>
