@@ -30,12 +30,15 @@ public class activity_AcercaDeNosotros extends AppCompatActivity {
             case R.id.piano_Tradicional:
                 Intent objIntentTradicional = new Intent(getApplicationContext(), activity_PianoTradicional.class);
                 startActivity(objIntentTradicional);
+                break;
             case R.id.piano_Infantil:
                 Intent objIntentInfantil = new Intent(getApplicationContext(), activity_Piano_Infantil_Selva.class);
                 startActivity(objIntentInfantil);
+                break;
             case R.id.piano_Instrumento:
                 Intent objIntentInstru = new Intent(getApplicationContext(), activity_Piano_Instrumental.class);
                 startActivity(objIntentInstru);
+                break;
             case R.id.acercaDe:
                 break;
             case R.id.salir:
