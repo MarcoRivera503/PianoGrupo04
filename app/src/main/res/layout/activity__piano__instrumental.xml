@@ -7,10 +7,59 @@
     android:orientation="horizontal"
     tools:context=".activity_Piano_Instrumental">
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/idarpa"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="Piano instrumental" />
+        android:onClick="arpa"
+        android:text="arpa" />
+
+    <Button
+        android:id="@+id/idbajo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="bajo"
+        android:text="bajo" />
+
+    <Button
+        android:id="@+id/idbongos"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="bongos"
+        android:text="bongos" />
+
+    <Button
+        android:id="@+id/idflauta"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="flauta"
+        android:text="flauta" />
+
+    <Button
+        android:id="@+id/idpiano"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="piano"
+        android:text="piano" />
+
+    <Button
+        android:id="@+id/idtambor"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="tambor"
+        android:text="tambor" />
+
+    <Button
+        android:id="@+id/idtrompeta"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="trompeta"
+        android:text="trompeta" />
 </LinearLayout>

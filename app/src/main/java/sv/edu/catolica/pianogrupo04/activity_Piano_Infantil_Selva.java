@@ -1,16 +1,17 @@
 package sv.edu.catolica.pianogrupo04;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class activity_Piano_Infantil_Selva extends AppCompatActivity {
-
+MediaPlayer sonido;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +26,7 @@ public class activity_Piano_Infantil_Selva extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected( MenuItem item) {
         switch (item.getItemId()){
             case R.id.piano_Tradicional:
             Intent objIntentTradicional = new Intent(activity_Piano_Infantil_Selva.this, activity_PianoTradicional.class);
@@ -46,5 +47,46 @@ public class activity_Piano_Infantil_Selva extends AppCompatActivity {
             default:
         }
         return super.onOptionsItemSelected(item);
+       // this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+    }
+    public void buho(View v){
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.buho);
+        if (sonido.isPlaying()){
+            sonido.stop();
+        }else {
+            sonido.start();
+        }
+    }
+    public void burro(View v){
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.burro);
+        if (sonido.isPlaying()){
+            sonido.stop();
+        }else {
+            sonido.start();
+        }
+    }
+    public void caballo(View v){
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.caballo);
+        if (sonido.isPlaying()){
+            sonido.stop();
+        }else {
+            sonido.start();
+        }
+    }
+    public void gallo(View v){
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.gallo);
+        if (sonido.isPlaying()){
+            sonido.stop();
+        }else {
+            sonido.start();
+        }
+    }
+    public void oveja(View v){
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.oveja);
+        if (sonido.isPlaying()){
+            sonido.stop();
+        }else {
+            sonido.start();
+        }
     }
 }
