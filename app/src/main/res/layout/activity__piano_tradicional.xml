@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".activity_PianoTradicional">
+
+    <Button
+        android:id="@+id/idDo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="Do"
+        android:text="Do" />
+
+    <Button
+        android:id="@+id/idRe"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="Re"
+        android:text="Re" />
+
+    <Button
+        android:id="@+id/idMi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="Mi"
+        android:text="Mi" />
+
+    <Button
+        android:id="@+id/idFa"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="Fa"
+        android:text="Fa" />
+
+    <Button
+        android:id="@+id/idSo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="So"
+        android:text="So" />
+
+    <Button
+        android:id="@+id/idLa"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="La"
+        android:text="LA" />
+
+    <Button
+        android:id="@+id/idSi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="Si"
+        android:text="Si" />
+</LinearLayout>
