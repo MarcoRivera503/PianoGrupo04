@@ -45,7 +45,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:onClick="So"
-        android:text="So" />
+        android:text="Sol" />
 
     <Button
         android:id="@+id/idtambor"
