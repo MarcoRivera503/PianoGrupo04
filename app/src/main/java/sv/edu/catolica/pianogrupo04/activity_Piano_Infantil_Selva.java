@@ -26,7 +26,7 @@ MediaPlayer sonido;
     }
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    public boolean onOptionsItemSelected( MenuItem item) {
         switch (item.getItemId()){
             case R.id.piano_Tradicional:
             Intent objIntentTradicional = new Intent(activity_Piano_Infantil_Selva.this, activity_PianoTradicional.class);
@@ -44,7 +44,7 @@ MediaPlayer sonido;
             default:
         }
         return super.onOptionsItemSelected(item);
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+       // this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
     public void buho(View v){
         sonido = MediaPlayer.create(getApplicationContext(),R.raw.buho);
