@@ -2,6 +2,7 @@ package sv.edu.catolica.pianogrupo04;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +13,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__piano_tradicional);
-
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
     public void Do(View v){
        sonido = MediaPlayer.create(getApplicationContext(),R.raw.dop);
