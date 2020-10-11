@@ -8,7 +8,7 @@
     tools:context=".activity_PianoTradicional">
 
     <Button
-        android:id="@+id/idDo"
+        android:id="@+id/idarpa"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -16,7 +16,7 @@
         android:text="Do" />
 
     <Button
-        android:id="@+id/idRe"
+        android:id="@+id/idbajo"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -24,7 +24,7 @@
         android:text="Re" />
 
     <Button
-        android:id="@+id/idMi"
+        android:id="@+id/idbongos"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -32,7 +32,7 @@
         android:text="Mi" />
 
     <Button
-        android:id="@+id/idFa"
+        android:id="@+id/idflauta"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -40,7 +40,7 @@
         android:text="Fa" />
 
     <Button
-        android:id="@+id/idSo"
+        android:id="@+id/idpiano"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -48,7 +48,7 @@
         android:text="So" />
 
     <Button
-        android:id="@+id/idLa"
+        android:id="@+id/idtambor"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -56,7 +56,7 @@
         android:text="LA" />
 
     <Button
-        android:id="@+id/idSi"
+        android:id="@+id/idtrompeta"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
