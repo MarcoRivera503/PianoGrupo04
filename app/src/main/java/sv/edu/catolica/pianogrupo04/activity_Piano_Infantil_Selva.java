@@ -1,5 +1,6 @@
 package sv.edu.catolica.pianogrupo04;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,9 +10,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class activity_Piano_Infantil_Selva extends AppCompatActivity {
 MediaPlayer sonido;
+Toast toast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,18 +29,18 @@ MediaPlayer sonido;
     }
 
     @Override
-    public boolean onOptionsItemSelected( MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.piano_Tradicional:
-            Intent objIntentTradicional = new Intent(activity_Piano_Infantil_Selva.this, activity_PianoTradicional.class);
+            Intent objIntentTradicional = new Intent(getApplicationContext(), activity_PianoTradicional.class);
             startActivity(objIntentTradicional);
             case R.id.piano_Infantil:
                 break;
             case R.id.piano_Instrumento:
-                Intent objIntentInstru = new Intent(activity_Piano_Infantil_Selva.this, activity_Piano_Instrumental.class);
+                Intent objIntentInstru = new Intent(getApplicationContext(), activity_Piano_Instrumental.class);
                 startActivity(objIntentInstru);
             case R.id.acercaDe:
-                Intent objIntentAcerca = new Intent(activity_Piano_Infantil_Selva.this, activity_AcercaDeNosotros.class);
+                Intent objIntentAcerca = new Intent(getApplicationContext(), activity_AcercaDeNosotros.class);
                 startActivity(objIntentAcerca);
             case R.id.salir:
                 finish();
@@ -47,43 +50,88 @@ MediaPlayer sonido;
        // this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
     public void buho(View v){
-        sonido = MediaPlayer.create(getApplicationContext(),R.raw.buho);
-        if (sonido.isPlaying()){
+        if (sonido != null)
             sonido.stop();
-        }else {
+
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.buho);
+
             sonido.start();
-        }
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡BUHO!",Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void burro(View v){
-        sonido = MediaPlayer.create(getApplicationContext(),R.raw.burro);
-        if (sonido.isPlaying()){
+        if (sonido != null)
             sonido.stop();
-        }else {
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.burro);
+
             sonido.start();
-        }
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡BURRO!",Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void caballo(View v){
-        sonido = MediaPlayer.create(getApplicationContext(),R.raw.caballo);
-        if (sonido.isPlaying()){
+        if (sonido != null)
             sonido.stop();
-        }else {
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.caballo);
+
             sonido.start();
-        }
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡CABALLO!",Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void gallo(View v){
-        sonido = MediaPlayer.create(getApplicationContext(),R.raw.gallo);
-        if (sonido.isPlaying()){
+        if (sonido != null)
             sonido.stop();
-        }else {
+
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.gallo);
             sonido.start();
-        }
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡GALLO!",Toast.LENGTH_SHORT);
+        toast.show();
     }
     public void oveja(View v){
-        sonido = MediaPlayer.create(getApplicationContext(),R.raw.oveja);
-        if (sonido.isPlaying()){
+        if (sonido != null)
             sonido.stop();
-        }else {
+
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.oveja);
             sonido.start();
-        }
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡OVEJA!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    public void perro(View v){
+        if (sonido != null)
+            sonido.stop();
+
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.perro);
+        sonido.start();
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡PERRO!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    public void vaca(View v){
+        if (sonido != null)
+            sonido.stop();
+
+        sonido = MediaPlayer.create(getApplicationContext(),R.raw.vaca);
+        sonido.start();
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡VACA!",Toast.LENGTH_SHORT);
+        toast.show();
     }
 }

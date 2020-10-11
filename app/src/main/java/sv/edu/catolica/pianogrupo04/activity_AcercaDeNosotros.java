@@ -28,13 +28,13 @@ public class activity_AcercaDeNosotros extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.piano_Tradicional:
-                Intent objIntentTradicional = new Intent(activity_AcercaDeNosotros.this, activity_PianoTradicional.class);
+                Intent objIntentTradicional = new Intent(getApplicationContext(), activity_PianoTradicional.class);
                 startActivity(objIntentTradicional);
             case R.id.piano_Infantil:
-                Intent objIntentInfantil = new Intent(activity_AcercaDeNosotros.this, activity_Piano_Infantil_Selva.class);
+                Intent objIntentInfantil = new Intent(getApplicationContext(), activity_Piano_Infantil_Selva.class);
                 startActivity(objIntentInfantil);
             case R.id.piano_Instrumento:
-                Intent objIntentInstru = new Intent(activity_AcercaDeNosotros.this, activity_Piano_Instrumental.class);
+                Intent objIntentInstru = new Intent(getApplicationContext(), activity_Piano_Instrumental.class);
                 startActivity(objIntentInstru);
             case R.id.acercaDe:
                 break;
