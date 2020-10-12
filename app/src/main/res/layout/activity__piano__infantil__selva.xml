@@ -4,62 +4,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/selva_fondo"
     tools:context=".activity_Piano_Infantil_Selva">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="125dp">
 
-    <Button
-        android:id="@+id/idarpa"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:onClick="buho"
-        android:text="buho" />
 
-    <Button
-        android:id="@+id/idbajo"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:onClick="burro"
-        android:text="Burro" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/buho1" />
 
-    <Button
-        android:id="@+id/idbongos"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:onClick="caballo"
-        android:text="caballo" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/burro" />
 
-    <Button
-        android:id="@+id/idflauta"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:onClick="gallo"
-        android:text="gallo" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/caballo" />
 
-    <Button
-        android:id="@+id/idpiano"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:onClick="oveja"
-        android:text="oveja" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gallo" />
 
-    <Button
-        android:id="@+id/idtambor"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:onClick="perro"
-        android:text="perro" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/oveja" />
 
-    <Button
-        android:id="@+id/idtrompeta"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/perro" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/vaca" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:onClick="vaca"
-        android:text="vaca" />
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/idarpa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#d63447"
+            android:onClick="buho"
+            android:text="buho" />
+
+        <Button
+            android:id="@+id/idbajo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="burro"
+            android:background="#fc8210"
+            android:text="Burro" />
+
+        <Button
+            android:id="@+id/idbongos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="caballo"
+            android:background="#ffd31d"
+            android:text="caballo" />
+
+        <Button
+            android:id="@+id/idflauta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="gallo"
+            android:background="#fbf7f0"
+            android:text="gallo" />
+
+        <Button
+            android:id="@+id/idpiano"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="oveja"
+            android:background="#8cba51"
+            android:text="oveja" />
+
+        <Button
+            android:id="@+id/idtambor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="perro"
+            android:background="#77d8d8"
+            android:text="perro" />
+
+        <Button
+            android:id="@+id/idtrompeta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0779e4"
+            android:onClick="vaca"
+            android:text="vaca" />
+    </LinearLayout>
+
 </LinearLayout>
