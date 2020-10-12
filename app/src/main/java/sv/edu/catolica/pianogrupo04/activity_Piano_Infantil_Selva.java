@@ -34,15 +34,8 @@ Toast toast;
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.piano_Tradicional:
-            Intent objIntentTradicional = new Intent(getApplicationContext(), activity_PianoTradicional.class);
-            startActivity(objIntentTradicional);
-                break;
-            case R.id.piano_Infantil:
-                break;
-            case R.id.piano_Instrumento:
-                Intent objIntentInstru = new Intent(getApplicationContext(), activity_Piano_Instrumental.class);
-                startActivity(objIntentInstru);
+            case R.id.piano:
+                Selectivo();
                 break;
             case R.id.acercaDe:
                 Intent objIntentAcerca = new Intent(getApplicationContext(), activity_AcercaDeNosotros.class);
@@ -79,6 +72,33 @@ Toast toast;
             Salir();
         }
         return super.onKeyDown(keyCode, event);
+    }
+    public void Selectivo(){
+
+        final String[] tipos = {"Piano tradicional", "Piano infantil de la selva", "Piano de instrumentos musicales"};
+
+        AlertDialog.Builder ventanita = new AlertDialog.Builder(this);
+        ventanita.setTitle("Cambiar tipo de piano:");
+        ventanita.setItems(tipos, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int item) {
+                switch (item){
+                    case 0:
+                        Intent objIntentTradicional = new Intent(getApplicationContext(), activity_PianoTradicional.class);
+                        startActivity(objIntentTradicional);
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        Intent objIntentInstru = new Intent(getApplicationContext(), activity_Piano_Instrumental.class);
+                        startActivity(objIntentInstru);
+                        break;
+                    default:
+                }
+            }
+        });
+        ventanita.create();
+        ventanita.show();
     }
     public void buho(View v){
         if (sonido != null)
