@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">PianoGrupo04</string>
+    <string name="catolica">UNIVERSIDAD CATÓLICA DE EL SALVADOR</string>
+    <string name="logounicaes">logoUnicaes</string>
+    <string name="integrantes">Integrantes:</string>
+    <string name="manuel">José Manuel Solís Martínez</string>
+    <string name="sofia">Josselyn Sofía Escobar Díaz</string>
+    <string name="marco">Marco Tulio Umaña Rivera</string>
+    <string name="_2017sm602">2017SM602</string>
+    <string name="_2017ed601">2017ED601</string>
+    <string name="_2017ur601">2017UR601</string>
+    <string name="foto_de_manuel">foto de Manuel</string>
+    <string name="foto_de_sofia">foto de Sofia</string>
+    <string name="foto_de_marco">foto de Marco</string>
 </resources>
