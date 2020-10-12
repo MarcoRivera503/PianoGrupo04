@@ -58,6 +58,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
                 intent.addCategory(Intent.CATEGORY_HOME);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
+                finish(); System.exit(0);
             }
         }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
             @Override
