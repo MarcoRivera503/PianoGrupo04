@@ -4,62 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
     tools:context=".activity_Piano_Instrumental">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="125dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Piano de Instrumentos"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="30sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
     <Button
         android:id="@+id/idarpa"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:onClick="arpa"
-        android:text="arpa" />
+        android:background="@drawable/arpa"
+        android:onClick="arpa" />
 
     <Button
         android:id="@+id/idbajo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:onClick="bajo"
-        android:text="bajo" />
+        android:background="@drawable/bajo"
+        android:onClick="bajo"/>
 
     <Button
         android:id="@+id/idbongos"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:onClick="bongos"
-        android:text="bongos" />
+        android:background="@drawable/bongos"
+        android:onClick="bongos" />
 
     <Button
         android:id="@+id/idflauta"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:onClick="flauta"
-        android:text="flauta" />
+        android:background="@drawable/flauta"
+        android:onClick="flauta" />
 
     <Button
         android:id="@+id/idpiano"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:onClick="piano"
-        android:text="piano" />
+        android:background="@drawable/teclado"
+        android:onClick="piano" />
 
     <Button
         android:id="@+id/idtambor"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:onClick="tambor"
-        android:text="tambor" />
+        android:background="@drawable/tambor"
+        android:onClick="tambor" />
 
     <Button
         android:id="@+id/idtrompeta"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:onClick="trompeta"
-        android:text="trompeta" />
+        android:background="@drawable/trompeta"
+        android:onClick="trompeta" />
+    </LinearLayout>
 </LinearLayout>
