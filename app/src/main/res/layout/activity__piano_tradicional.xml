@@ -125,7 +125,7 @@
                     android:layout_weight="0.5"
 
                     android:background="@color/colorPrimaryDark"
-                    android:onClick="Re2" />
+                    android:onClick="Do1" />
 
                 <View
                     android:id="@+id/idmi3"
@@ -134,7 +134,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_weight="0.5"
                     android:background="@color/colorPrimaryDark"
-                    android:onClick="Mi3" />
+                    android:onClick="Re2" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -150,7 +150,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_weight="0.5"
                     android:background="@color/colorPrimaryDark"
-                    android:onClick="So4" />
+                    android:onClick="Mi3" />
 
                 <View
                     android:id="@+id/idla5"
@@ -159,7 +159,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_weight="0.5"
                     android:background="@color/colorPrimaryDark"
-                    android:onClick="La5" />
+                    android:onClick="So4" />
 
                 <View
                     android:id="@+id/idsi6"
@@ -168,7 +168,7 @@
                     android:layout_marginLeft="30dp"
                     android:layout_weight="0.5"
                     android:background="@color/colorPrimaryDark"
-                    android:onClick="Si6" />
+                    android:onClick="La5" />
             </LinearLayout>
 
         </LinearLayout>

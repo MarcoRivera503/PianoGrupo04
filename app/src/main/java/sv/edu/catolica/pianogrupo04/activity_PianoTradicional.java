@@ -116,6 +116,18 @@ public class activity_PianoTradicional extends AppCompatActivity {
         toast.show();
     }
     //SegundaEtapa
+    public void Do1(View v){
+        if (sonido != null)
+            sonido.stop();
+
+        sonido = MediaPlayer.create(getApplicationContext(), R.raw.do1);
+        sonido.start();
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡DO#!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
 
     public void Re2(View v){
         if (sonido != null)
@@ -170,19 +182,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         toast= Toast.makeText(getApplicationContext(),"¡LA#!",Toast.LENGTH_SHORT);
         toast.show();
     }
-    public void Si6(View v){
-        if (sonido != null)
-            sonido.stop();
 
-        sonido = MediaPlayer.create(getApplicationContext(), R.raw.si6);
-
-        sonido.start();
-        if (toast != null)
-            toast.cancel();
-
-        toast= Toast.makeText(getApplicationContext(),"¡SI#!",Toast.LENGTH_SHORT);
-        toast.show();
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
