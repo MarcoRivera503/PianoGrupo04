@@ -85,7 +85,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡SO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(),"¡SOL",Toast.LENGTH_SHORT);
         toast.show();
     }
     public void La(View v)
@@ -113,6 +113,74 @@ public class activity_PianoTradicional extends AppCompatActivity {
             toast.cancel();
 
         toast= Toast.makeText(getApplicationContext(),"¡SI!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    //SegundaEtapa
+
+    public void Re2(View v){
+        if (sonido != null)
+            sonido.stop();
+
+        sonido = MediaPlayer.create(getApplicationContext(), R.raw.re2);
+        sonido.start();
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡RE#!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    public void Mi3(View v){
+        if (sonido != null)
+            sonido.stop();
+
+        sonido = MediaPlayer.create(getApplicationContext(), R.raw.mi3);
+
+        sonido.start();
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡MI#!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void So4(View v){
+        if (sonido != null)
+            sonido.stop();
+
+        sonido = MediaPlayer.create(getApplicationContext(), R.raw.sol4);
+
+        sonido.start();
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡SOL#!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    public void La5(View v)
+    {
+        if (sonido != null)
+            sonido.stop();
+
+        sonido = MediaPlayer.create(getApplicationContext(), R.raw.la5);
+
+        sonido.start();
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡LA#!",Toast.LENGTH_SHORT);
+        toast.show();
+    }
+    public void Si6(View v){
+        if (sonido != null)
+            sonido.stop();
+
+        sonido = MediaPlayer.create(getApplicationContext(), R.raw.si6);
+
+        sonido.start();
+        if (toast != null)
+            toast.cancel();
+
+        toast= Toast.makeText(getApplicationContext(),"¡SI#!",Toast.LENGTH_SHORT);
         toast.show();
     }
 
