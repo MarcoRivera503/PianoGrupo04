@@ -151,7 +151,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡MI#!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(),"¡FA#!",Toast.LENGTH_SHORT);
         toast.show();
     }
 
