@@ -116,18 +116,25 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:layout_marginLeft="20dp"/>
+
                 <View
+                    android:id="@+id/idre"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginLeft="30dp"
-                    android:background="@color/colorPrimaryDark"/>
+                    android:layout_weight="0.5"
+
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="Re2" />
+
                 <View
+                    android:id="@+id/idmi3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginLeft="30dp"
-                    android:background="@color/colorPrimaryDark"/>
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="Mi3" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -135,24 +142,33 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="0.5">
+
                 <View
+                    android:id="@+id/idsol4"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginLeft="30dp"
-                    android:background="@color/colorPrimaryDark"/>
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="So4" />
+
                 <View
+                    android:id="@+id/idla5"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginLeft="30dp"
-                    android:background="@color/colorPrimaryDark"/>
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="La5" />
+
                 <View
+                    android:id="@+id/idsi6"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.5"
                     android:layout_marginLeft="30dp"
-                    android:background="@color/colorPrimaryDark"/>
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimaryDark"
+                    android:onClick="Si6" />
             </LinearLayout>
 
         </LinearLayout>
