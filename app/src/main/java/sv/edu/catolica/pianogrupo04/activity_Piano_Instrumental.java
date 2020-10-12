@@ -34,15 +34,8 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.piano_Tradicional:
-                Intent objIntentTradicional = new Intent(getApplicationContext(), activity_PianoTradicional.class);
-                startActivity(objIntentTradicional);
-                break;
-            case R.id.piano_Infantil:
-                Intent objIntentInfantil = new Intent(getApplicationContext(), activity_Piano_Infantil_Selva.class);
-                startActivity(objIntentInfantil);
-                break;
-            case R.id.piano_Instrumento:
+            case R.id.piano:
+                Selectivo();
                 break;
             case R.id.acercaDe:
                 Intent objIntentAcerca = new Intent(getApplicationContext(), activity_AcercaDeNosotros.class);
@@ -80,6 +73,33 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
             Salir();
         }
         return super.onKeyDown(keyCode, event);
+    }
+    public void Selectivo(){
+
+        final String[] tipos = {"Piano tradicional", "Piano infantil de la selva", "Piano de instrumentos musicales"};
+
+        AlertDialog.Builder ventanita = new AlertDialog.Builder(this);
+        ventanita.setTitle("Cambiar tipo de piano:");
+        ventanita.setItems(tipos, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int item) {
+                switch (item){
+                    case 0:
+                        Intent objIntentTradicional = new Intent(getApplicationContext(), activity_PianoTradicional.class);
+                        startActivity(objIntentTradicional);
+                        break;
+                    case 1:
+                        Intent objIntentInfantil = new Intent(getApplicationContext(), activity_Piano_Infantil_Selva.class);
+                        startActivity(objIntentInfantil);
+                        break;
+                    case 2:
+                        break;
+                    default:
+                }
+            }
+        });
+        ventanita.create();
+        ventanita.show();
     }
     public void arpa(View v){
         if (sonido != null)

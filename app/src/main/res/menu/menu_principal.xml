@@ -3,27 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/piano_Tradicional"
-        android:title="Piano tradicional"
+        android:id="@+id/piano"
+        android:title="Cambiar tipo de piano"
         android:orderInCategory="5"/>
 
     <item
-        android:id="@+id/piano_Infantil"
-        android:title="Piano infantil Selva"
-        android:orderInCategory="10"/>
-
-    <item
-        android:id="@+id/piano_Instrumento"
-        android:title="Piano de intrumentos"
-        android:orderInCategory="15"/>
-
-    <item
         android:id="@+id/acercaDe"
-        android:title="Acerca de"
-        android:orderInCategory="20"/>
+        android:title="Acerca de..."
+        android:orderInCategory="10"/>
 
     <item
         android:id="@+id/salir"
         android:title="Salir"
-        android:orderInCategory="25"/>
+        android:orderInCategory="15"/>
 </menu>
