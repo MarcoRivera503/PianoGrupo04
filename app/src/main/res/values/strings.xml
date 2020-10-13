@@ -53,4 +53,11 @@
     <string name="FA_">¡FA#!</string>
     <string name="SOL_">¡SOL#!</string>
     <string name="LA_">¡LA#!</string>
+    <string name="imagen_de_buho">imagen de buho</string>
+    <string name="imagen_de_burro">imagen de burro</string>
+    <string name="imagen_de_caballo">imagen de caballo</string>
+    <string name="imagen_de_gallo">imagen de gallo</string>
+    <string name="imagen_de_oveja">imagen de oveja</string>
+    <string name="imagen_de_perro">imagen de perro</string>
+    <string name="imagen_de_vaca">imagen de vaca</string>
 </resources>
