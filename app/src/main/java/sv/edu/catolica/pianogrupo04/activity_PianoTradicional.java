@@ -34,7 +34,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡DO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.DO,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void Re(View v){
@@ -46,7 +46,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡RE!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.RE,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void Mi(View v){
@@ -59,7 +59,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡MI!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.MI,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void Fa(View v){
@@ -72,7 +72,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡FA!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.FA,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void So(View v){
@@ -85,7 +85,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡SOL",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.SOL,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void La(View v)
@@ -99,7 +99,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡LA!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.LA,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void Si(View v){
@@ -112,7 +112,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡SI!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.SI,Toast.LENGTH_SHORT);
         toast.show();
     }
     //SegundaEtapa
@@ -125,7 +125,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡DO#!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.DO_,Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -138,7 +138,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡RE#!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.RE_,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void Mi3(View v){
@@ -151,7 +151,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡FA#!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.FA_,Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -165,7 +165,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡SOL#!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.SOL_,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void La5(View v)
@@ -179,7 +179,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡LA#!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.LA_,Toast.LENGTH_SHORT);
         toast.show();
     }
 
@@ -210,7 +210,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
 
     public void Salir(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("¿Desea salir de PianoGrupo04?").setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+        builder.setMessage(R.string.salir).setPositiveButton(R.string.si, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -219,7 +219,7 @@ public class activity_PianoTradicional extends AppCompatActivity {
                 startActivity(intent);
                 finish(); System.exit(0);
             }
-        }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+        }).setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
@@ -236,10 +236,10 @@ public class activity_PianoTradicional extends AppCompatActivity {
     }
     public void Selectivo(){
 
-        final String[] tipos = {"Piano tradicional", "Piano infantil de la selva", "Piano de instrumentos musicales"};
+        final String[] tipos = {getString(R.string.tradicional), getString(R.string.selva), getString(R.string.instrumentos)};
 
         AlertDialog.Builder ventanita = new AlertDialog.Builder(this);
-        ventanita.setTitle("Cambiar tipo de piano:");
+        ventanita.setTitle(R.string.cambiar);
         ventanita.setItems(tipos, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int item) {

@@ -72,9 +72,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#d63447"
+            android:background="@color/color_buho"
             android:onClick="buho"
-            android:text="buho" />
+            android:text="@string/buho" />
 
         <Button
             android:id="@+id/idbajo"
@@ -82,8 +82,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="burro"
-            android:background="#fc8210"
-            android:text="Burro" />
+            android:background="@color/color_burro"
+            android:text="@string/burro" />
 
         <Button
             android:id="@+id/idbongos"
@@ -91,8 +91,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="caballo"
-            android:background="#ffd31d"
-            android:text="caballo" />
+            android:background="@color/color_caballo"
+            android:text="@string/caballo" />
 
         <Button
             android:id="@+id/idflauta"
@@ -100,8 +100,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="gallo"
-            android:background="#fbf7f0"
-            android:text="gallo" />
+            android:background="@color/color_gallo"
+            android:text="@string/gallo" />
 
         <Button
             android:id="@+id/idpiano"
@@ -109,8 +109,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="oveja"
-            android:background="#8cba51"
-            android:text="oveja" />
+            android:background="@color/color_oveja"
+            android:text="@string/oveja" />
 
         <Button
             android:id="@+id/idtambor"
@@ -118,17 +118,17 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="perro"
-            android:background="#77d8d8"
-            android:text="perro" />
+            android:background="@color/color_perro"
+            android:text="@string/perro" />
 
         <Button
             android:id="@+id/idtrompeta"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#0779e4"
+            android:background="@color/color_vaca"
             android:onClick="vaca"
-            android:text="vaca" />
+            android:text="@string/vaca" />
     </LinearLayout>
 
 </LinearLayout>

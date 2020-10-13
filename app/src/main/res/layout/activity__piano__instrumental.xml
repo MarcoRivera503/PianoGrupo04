@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Piano de Instrumentos"
+            android:text="@string/piano_de_instrumentos"
             android:textColor="@android:color/white"
             android:gravity="center"
             android:textSize="30sp"></TextView>

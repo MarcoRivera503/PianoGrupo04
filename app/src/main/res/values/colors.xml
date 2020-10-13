@@ -4,4 +4,11 @@
     <color name="colorPrimaryDark">#161220</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorFondo">#85E7FFE4</color>
+    <color name="color_buho">#d63447</color>
+    <color name="color_burro">#fc8210</color>
+    <color name="color_caballo">#ffd31d</color>
+    <color name="color_gallo">#fbf7f0</color>
+    <color name="color_oveja">#8cba51</color>
+    <color name="color_perro">#77d8d8</color>
+    <color name="color_vaca">#0779e4</color>
 </resources>

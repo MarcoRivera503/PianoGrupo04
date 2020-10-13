@@ -51,7 +51,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
     }
     public void Salir(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("¿Desea salir de PianoGrupo04?").setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+        builder.setMessage(R.string.salir).setPositiveButton(R.string.si, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -60,7 +60,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
                 startActivity(intent);
                 finish(); System.exit(0);
             }
-        }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+        }).setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
@@ -77,10 +77,10 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
     }
     public void Selectivo(){
 
-        final String[] tipos = {"Piano tradicional", "Piano infantil de la selva", "Piano de instrumentos musicales"};
+        final String[] tipos = {getString(R.string.tradicional), getString(R.string.selva), getString(R.string.instrumentos)};
 
         AlertDialog.Builder ventanita = new AlertDialog.Builder(this);
-        ventanita.setTitle("Cambiar tipo de piano:");
+        ventanita.setTitle(R.string.cambiar);
         ventanita.setItems(tipos, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int item) {
@@ -113,7 +113,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡ARPA!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.ARPA,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void bajo(View v){
@@ -125,7 +125,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡BAJO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.BAJO,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void bongos(View v){
@@ -137,7 +137,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡BONGOS!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.BONGOS,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void flauta(View v){
@@ -149,7 +149,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡FLAUTA!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.FLAUTA,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void piano(View v){
@@ -160,7 +160,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
             sonido.start();
         if (toast != null)
             toast.cancel();
-        toast= Toast.makeText(getApplicationContext(),"¡PIANO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.PIANO,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void tambor(View v){
@@ -172,7 +172,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡TAMBOR!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.TAMBOR,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void trompeta(View v){
@@ -184,7 +184,7 @@ public class activity_Piano_Instrumental extends AppCompatActivity {
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡TROMPETA!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.TROMPETA,Toast.LENGTH_SHORT);
         toast.show();
     }
 }

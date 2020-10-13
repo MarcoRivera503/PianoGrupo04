@@ -50,7 +50,7 @@ Toast toast;
     }
     public void Salir(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("¿Desea salir de PianoGrupo04?").setPositiveButton("Sí", new DialogInterface.OnClickListener() {
+        builder.setMessage(R.string.salir).setPositiveButton(R.string.si, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Intent intent = new Intent(Intent.ACTION_MAIN);
@@ -59,7 +59,7 @@ Toast toast;
                 startActivity(intent);
                 finish(); System.exit(0);
             }
-        }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+        }).setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
@@ -76,10 +76,10 @@ Toast toast;
     }
     public void Selectivo(){
 
-        final String[] tipos = {"Piano tradicional", "Piano infantil de la selva", "Piano de instrumentos musicales"};
+        final String[] tipos = {getString(R.string.tradicional), getString(R.string.selva), getString(R.string.instrumentos)};
 
         AlertDialog.Builder ventanita = new AlertDialog.Builder(this);
-        ventanita.setTitle("Cambiar tipo de piano:");
+        ventanita.setTitle(R.string.cambiar);
         ventanita.setItems(tipos, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int item) {
@@ -111,7 +111,7 @@ Toast toast;
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡BUHO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.BUHO,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void burro(View v){
@@ -123,7 +123,7 @@ Toast toast;
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡BURRO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.BURRO,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void caballo(View v){
@@ -135,7 +135,7 @@ Toast toast;
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡CABALLO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.CABALLO,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void gallo(View v){
@@ -147,7 +147,7 @@ Toast toast;
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡GALLO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.GALLO,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void oveja(View v){
@@ -159,7 +159,7 @@ Toast toast;
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡OVEJA!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.OVEJA,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void perro(View v){
@@ -171,7 +171,7 @@ Toast toast;
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡PERRO!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.PERRO,Toast.LENGTH_SHORT);
         toast.show();
     }
     public void vaca(View v){
@@ -183,7 +183,7 @@ Toast toast;
         if (toast != null)
             toast.cancel();
 
-        toast= Toast.makeText(getApplicationContext(),"¡VACA!",Toast.LENGTH_SHORT);
+        toast= Toast.makeText(getApplicationContext(), R.string.VACA,Toast.LENGTH_SHORT);
         toast.show();
     }
 }
